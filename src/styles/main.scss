@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family: 'Value Sans Pro';
+}
+
+.container {
+    margin: 0 auto;
+    width: auto;
+}
+
+@import './fonts.scss';
+@import './variables.scss';
+
+@import './header.scss';
+@import './popular.scss';
+@import './main-card.scss';
+@import './footer.scss';
+@import './media';

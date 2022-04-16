@@ -1,0 +1,300 @@
+/* ---Main begin--- */
+.scrollline {
+    display: flex;
+    margin: 0;
+    gap: 176px;
+    margin: 48px 0 64px 0;
+    overflow: hidden;
+    height: 100px;
+    font-family: 'Rimma_sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.scrollline-text {
+    display: none;
+    margin: 0;
+    line-height: 100%;
+    padding-bottom: 20.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    
+}
+
+.color-rolls {
+    background: linear-gradient(0deg, #F293A2 -0.01%, #F7BDC7 99.99%);
+    color: #FFD8E1;
+}
+
+.color-sushi {
+    background: linear-gradient(0deg, #F9B147 -0.01%, #FDC944 99.99%);
+    color: #FFE091;
+}
+
+.color-poke {
+    background: linear-gradient(0deg, #001918 0%, #003D3D 100%);
+    color: #006666;
+}
+
+.animation-rolls {
+    animation: scrollrolls 3s  linear infinite;
+}
+
+.animation-sushi {
+    animation: scrollsushi 3s  linear infinite;
+}
+
+.animation-poke {
+    animation: scrollpoke 3s  linear infinite;
+}
+
+@keyframes scrollrolls {
+    to {
+        transform: translateX(-533.766px);
+    }
+}
+
+
+
+/* ---Rolls begin--- */
+.card:last-child {  
+    margin-bottom: 64px;
+}
+
+.card-title {
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    color: #274646;
+    margin-bottom: 31px;
+}
+
+.card-content {
+    display: grid;
+    gap: 27px;
+    grid-template-columns: repeat(4, 3fr);
+}
+
+.card-item {
+    display: grid;
+    grid-template-areas: 
+    "card-pictures"
+    "card-description"
+    ;
+    grid-template-rows: 200px auto;
+    position: relative;
+    max-width: 274px;
+    padding: 16px;
+    outline: 2px solid #FFF;
+    border-radius: 8px;
+}
+
+.card-item:hover {
+    outline: 2px solid #F7F7F7;
+}
+
+.card-pictures {
+    grid-template-columns: repeat(1, 12fr);
+    grid-area: card-pictures;
+}
+
+.card-icons {
+    display: flex;
+    position: absolute;
+    gap: 9.19px;
+    height: 24px;
+}
+
+.card-icons > button {
+    border: none;
+    cursor: pointer;
+}
+
+.card-icons__spicy {
+    background: url('./src/images/spicy.svg');
+    width: 24px;
+    height: 24px;
+    background-color: #F7F7F7;
+    border-radius: 32px;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+}
+
+.card-icons__spicy:hover {
+    background: url('./src/images/spicy-hover.svg');
+    width: 24px;
+    height: 24px;
+    background-color: #F7F7F7;
+    border-radius: 32px;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+}
+
+.card-icons__hot {
+    background: url('./src/images/hot.svg');
+    width: 24px;
+    height: 24px;
+    background-color: #F7F7F7;
+    border-radius: 32px;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+}
+
+.card-icons__hot:hover {
+    background: url('./src/images/hot-hover.svg');
+    width: 24px;
+    height: 24px;
+    background-color: #F7F7F7;
+    border-radius: 32px;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+}
+
+.card-icons__vegan {
+    background: url('./src/images/vegan.svg');
+    width: 24px;
+    height: 24px;
+    background-color: #F7F7F7;
+    border-radius: 32px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.card-icons__vegan:hover {
+    background: url('./src/images/vegan-hover.svg');
+    width: 24px;
+    height: 24px;
+    background-color: #F7F7F7;
+    border-radius: 32px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.card-image {
+    max-width: 274px;
+    height: 200px; 
+    overflow: hidden;
+}
+
+.card-image > img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+}
+
+.card-description {
+    grid-template-columns: repeat(1, 12fr);
+    grid-area: card-description;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-description__left {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.card-description__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 8px;
+    align-items: center;
+}
+
+.card-name {
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #6B6B6B;
+    padding-bottom: 4px;
+}
+
+.card-amount {
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #757575;
+}
+
+.card-oldprice {
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration-line: line-through;
+    color: #A0A0A0;
+}
+
+.card-oldprice::after {
+    content: ' ₽';
+}
+
+.card-newprice {
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #274646;
+    background: #E9E6E6;
+    border-radius: 46px;
+    padding: 10px 23.5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.card-newprice::after {
+    content: ' ₽';
+}
+
+.card-newprice:hover {
+    color: #FFFFFF;
+    background: #274646;
+}
+
+.card-line {
+    grid-area: card-line;
+    display: none;
+}
+/* ---Rolls end--- */
+
+
+
+/* ---Sushi begin--- */
+@keyframes scrollsushi {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-450.766px);
+    }
+}
+/* ---Sushi end--- */
+
+/* ---Poke begin--- */
+@keyframes scrollpoke {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-942.8px);
+    }
+}
+/* ---Poke end--- */
+/* ---Main end--- */

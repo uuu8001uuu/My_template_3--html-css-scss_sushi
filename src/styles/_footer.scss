@@ -1,0 +1,204 @@
+/* ---Footer begin--- */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #274646;
+}
+
+.footer-top {
+    padding-right: 20px;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 64px 0 22px 0;
+}
+
+.footer-navigation__item {
+    color: #F7F7F7;
+    text-decoration: none;
+    padding: 0 0 40px 0;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.footer-navigation__item > a {
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
+.footer-navigation__item > a:hover {
+    color: #FFBDC8;
+}
+
+.footer-navigation__item > a:hover::after {
+    content: '  -';
+    color: #FFBDC8;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 10px;
+}
+
+.footer-navigation__item:last-child {
+    padding: 0;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo > hr {
+    width: 400px;
+    outline: 1px solid #FFBDC8;
+    margin-bottom: 32px;
+}
+
+.footer-logo__desktop {
+    margin-bottom: 32px;
+}
+
+.footer-logo__mobile {
+    margin-bottom: 32px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 64px;
+    justify-content: center;
+}
+
+.footer-social__instagram {
+    background: url('./src/images/Instagram.svg');
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 32px;
+}
+
+.footer-social__instagram:hover {
+    background: url('./src/images/Instagram-hover.svg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 32px;
+}
+
+.footer-social__whatsapp {
+    background: url('./src/images/WhatsApp.svg');
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 32px;
+}
+
+.footer-social__whatsapp:hover {
+    background: url('./src/images/WhatsApp-hover.svg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 32px;
+}
+
+.footer-social__telegram {
+    background: url('./src/images/Telegram.svg');
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 32px;
+}
+
+.footer-social__telegram:hover {
+    background: url('./src/images/Telegram-hover.svg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 32px;
+}
+
+.footer-social__vk {
+    background: url('./src/images/VK_.svg');
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 32px;
+}
+
+.footer-social__vk:hover {
+    background: url('./src/images/VK-hover.svg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 32px;
+}
+
+.footer-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #565D95;
+    height: 47px;
+}
+
+.footer-description__left {
+    display: flex;
+    gap: 16px;
+    margin-left: 52px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.footer-description__left > a {
+    color: #FFFFFF;
+    
+}
+
+.footer-description__right {
+    display: flex;
+    gap: 8.38px;
+    margin-right: 69px;
+    text-decoration: none;
+}
+
+.footer-description__right-text {
+    display: flex;
+    align-items: center;
+}
+
+.footer-description__right-text > span {
+    font-size: 0;
+}
+
+.footer-description__right-text > span > mark {
+    font-size: 0;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.footer-description__right-text > span > mark:nth-child(1n + 1) {
+    color: #F2AF29;
+    background-color: #565D95;
+}
+
+.footer-description__right-text > span > mark:nth-child(2n + 1) {
+    color: #FFFFFF;
+}
+/* ---Footer end--- */

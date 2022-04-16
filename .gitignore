@@ -1,0 +1,7 @@
+_myUse_backup/
+_myUse_draft/
+
+node_modules/
+.vscode/
+
+accepts/
